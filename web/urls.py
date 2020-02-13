@@ -33,6 +33,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    # path('facts/', views.FactList.as_view()),
+    path('fact/<int:pk>/', views.FactDetail.as_view()),
+    # path('categories/', views.CategoryList.as_view()),
+    # path('category/<int:pk>/', views.CategoryDetail.as_view()),
 ]
 
 # urlpatterns = format_suffix_patterns(urlpatterns)

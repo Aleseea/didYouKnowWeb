@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="" />
+    <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,13 +31,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -38,6 +47,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1XAoIXb2LzAeJKYbgXI8GUYNA8x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,9 +56,16 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/app" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/server/app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="didYouKnowWeb" type="Python.DjangoServer" factoryName="Django server">
@@ -87,7 +104,7 @@
       <updated>1580498180418</updated>
       <workItem from="1580498182402" duration="1782000" />
       <workItem from="1581105343699" duration="1886000" />
-      <workItem from="1581439657536" duration="10781000" />
+      <workItem from="1581439657536" duration="11525000" />
     </task>
     <servers />
   </component>
@@ -103,10 +120,18 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1680.1050@0.0.1680.1050" timestamp="1580498901919" />
+    <state x="685" y="425" key="Github.ShareDialog" timestamp="1581629144189">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="685" y="425" key="Github.ShareDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581629144189" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1580498998995">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="239" height="457" key="HiddenNamespacesPopup/0.0.1680.1050@0.0.1680.1050" timestamp="1580498998995" />
+    <state x="341" y="164" key="SettingsEditor" timestamp="1581629063163">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1581629063163" />
     <state x="576" y="215" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1580499014550">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -115,5 +140,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581612158647" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1581629136085">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581629136085" />
   </component>
 </project>
