@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/js/HomePageRoot.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/HomePageRoot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/HomeRoot.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +118,7 @@
       <workItem from="1580498182402" duration="1782000" />
       <workItem from="1581105343699" duration="1886000" />
       <workItem from="1581439657536" duration="17102000" />
-      <workItem from="1582739850762" duration="3267000" />
+      <workItem from="1582739850762" duration="3502000" />
     </task>
     <servers />
   </component>
