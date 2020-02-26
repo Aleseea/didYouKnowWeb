@@ -11,6 +11,7 @@ from rest_framework.response import Response
 from rest_framework.parsers import JSONParser
 from web.facts import serializers as app_serializer
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from django.template import loader
 
 
 class UserViewSet(ModelViewSet):
@@ -59,3 +60,8 @@ class CategoryViewSet(ModelViewSet):
         elif request.method.lower() == "delete":
             category.facts.remove(fact)
         return Response()
+
+
+def home(request):
+    template = loader.get_template("home.html")
+    return HttpResponse(template.render())

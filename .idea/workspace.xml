@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/AppRoot.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/app_entry_point.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/HomePageRoot.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/HomePageRoot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/HomeRoot.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/facts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/facts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,12 +78,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/facts" />
+      <recent name="$PROJECT_DIR$/web/templates" />
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/server/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,6 +97,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="web.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -119,7 +128,8 @@
       <updated>1580498180418</updated>
       <workItem from="1580498182402" duration="1782000" />
       <workItem from="1581105343699" duration="1886000" />
-      <workItem from="1581439657536" duration="13029000" />
+      <workItem from="1581439657536" duration="17102000" />
+      <workItem from="1582739850762" duration="3267000" />
     </task>
     <servers />
   </component>
@@ -143,6 +153,30 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="685" y="425" key="Github.ShareDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581629144189" />
+    <state width="1680" height="260" key="GridCell.Tab.0.bottom" timestamp="1582739886342">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1680" height="302" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979631" />
+    <state width="1680" height="260" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582739886342" />
+    <state width="1680" height="302" key="GridCell.Tab.0.bottom/0.23.1680.951@0.23.1680.951" timestamp="1582221626836" />
+    <state width="1680" height="260" key="GridCell.Tab.0.center" timestamp="1582739886341">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1680" height="302" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979630" />
+    <state width="1680" height="260" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1582739886341" />
+    <state width="1680" height="302" key="GridCell.Tab.0.center/0.23.1680.951@0.23.1680.951" timestamp="1582221626834" />
+    <state width="1680" height="260" key="GridCell.Tab.0.left" timestamp="1582739886340">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1680" height="302" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979629" />
+    <state width="1680" height="260" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1582739886340" />
+    <state width="1680" height="302" key="GridCell.Tab.0.left/0.23.1680.951@0.23.1680.951" timestamp="1582221626832" />
+    <state width="1680" height="260" key="GridCell.Tab.0.right" timestamp="1582739886341">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1680" height="302" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979630" />
+    <state width="1680" height="260" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1582739886341" />
+    <state width="1680" height="302" key="GridCell.Tab.0.right/0.23.1680.951@0.23.1680.951" timestamp="1582221626835" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1580498998995">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -155,10 +189,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="576" y="215" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580499014550" />
-    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1581612158647">
+    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1582743836400">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581612158647" />
+    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582743836400" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1581629136085">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

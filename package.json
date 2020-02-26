@@ -2,6 +2,8 @@
   "name": "didYouKnowWeb",
   "version": "1.0.0",
   "dependencies": {
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-hot-loader": "^4.12.19",
+    "server": "^1.0.22"
   }
 }

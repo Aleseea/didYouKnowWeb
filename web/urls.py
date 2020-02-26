@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 from web.facts import views
+from django.conf.urls import url
 
 
 router = routers.DefaultRouter()
@@ -26,9 +27,10 @@ router.register(r'facts', views.FactViewSet)
 router.register(r'categories', views.CategoryViewSet)
 
 # Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
+# Login URLs for the browsable API.
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('did-you-know/', views.home),
 ]
