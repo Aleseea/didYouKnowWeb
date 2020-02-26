@@ -72,10 +72,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            # "libraries": {
-            #     "static_bundle": "server.templatetags.static_bundle",
-            #     "text_generators": "server.templatetags.text_generators",
-            # }
         },
     },
 ]

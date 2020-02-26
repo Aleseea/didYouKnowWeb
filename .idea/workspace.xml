@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +121,7 @@
       <workItem from="1580498182402" duration="1782000" />
       <workItem from="1581105343699" duration="1886000" />
       <workItem from="1581439657536" duration="17102000" />
-      <workItem from="1582739850762" duration="3502000" />
+      <workItem from="1582739850762" duration="4115000" />
     </task>
     <servers />
   </component>
@@ -178,10 +181,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="576" y="215" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580499014550" />
-    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1582743836400">
+    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1582744859927">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582743836400" />
+    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582744859927" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1581629136085">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
