@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'web',
 ]
 
+BUNDLE_URL = 'http://localhost:8888/dist/'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -72,6 +74,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            "libraries": {
+                "static_bundle": "server.templatetags.static_bundle",
+            }
         },
     },
 ]

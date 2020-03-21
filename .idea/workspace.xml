@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/templatetags/static_bundle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/app_entry_point.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/js/Container.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/Logo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/js/HomePageRoot.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/js/home_entry_point.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/didYouKnowWeb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,18 +84,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/server" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/facts" />
       <recent name="$PROJECT_DIR$/web/templates" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/server/app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -121,7 +139,11 @@
       <workItem from="1580498182402" duration="1782000" />
       <workItem from="1581105343699" duration="1886000" />
       <workItem from="1581439657536" duration="17102000" />
-      <workItem from="1582739850762" duration="4115000" />
+      <workItem from="1582739850762" duration="5833000" />
+      <workItem from="1583254601096" duration="358000" />
+      <workItem from="1584132098491" duration="860000" />
+      <workItem from="1584639950442" duration="4638000" />
+      <workItem from="1584816787508" duration="2719000" />
     </task>
     <servers />
   </component>
@@ -129,10 +151,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580498942112">
+    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583254614971">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580498942112" />
+    <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1583254614971" />
+    <state x="538" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582745725176">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="538" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1582745725176" />
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581631321187">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -145,29 +171,29 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="685" y="425" key="Github.ShareDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581629144189" />
-    <state width="1680" height="260" key="GridCell.Tab.0.bottom" timestamp="1582739886342">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1680" height="301" key="GridCell.Tab.0.bottom" timestamp="1584820007919">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1680" height="302" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979631" />
-    <state width="1680" height="260" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1582739886342" />
+    <state width="1680" height="301" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584820007919" />
+    <state width="1680" height="301" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1584753239614" />
     <state width="1680" height="302" key="GridCell.Tab.0.bottom/0.23.1680.951@0.23.1680.951" timestamp="1582221626836" />
-    <state width="1680" height="260" key="GridCell.Tab.0.center" timestamp="1582739886341">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1680" height="301" key="GridCell.Tab.0.center" timestamp="1584820007917">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1680" height="302" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979630" />
-    <state width="1680" height="260" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1582739886341" />
+    <state width="1680" height="301" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584820007917" />
+    <state width="1680" height="301" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1584753239613" />
     <state width="1680" height="302" key="GridCell.Tab.0.center/0.23.1680.951@0.23.1680.951" timestamp="1582221626834" />
-    <state width="1680" height="260" key="GridCell.Tab.0.left" timestamp="1582739886340">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1680" height="301" key="GridCell.Tab.0.left" timestamp="1584820007917">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1680" height="302" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979629" />
-    <state width="1680" height="260" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1582739886340" />
+    <state width="1680" height="301" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584820007917" />
+    <state width="1680" height="301" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1584753239613" />
     <state width="1680" height="302" key="GridCell.Tab.0.left/0.23.1680.951@0.23.1680.951" timestamp="1582221626832" />
-    <state width="1680" height="260" key="GridCell.Tab.0.right" timestamp="1582739886341">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="1680" height="301" key="GridCell.Tab.0.right" timestamp="1584820007918">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1680" height="302" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581633979630" />
-    <state width="1680" height="260" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1582739886341" />
+    <state width="1680" height="301" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584820007918" />
+    <state width="1680" height="301" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1584753239614" />
     <state width="1680" height="302" key="GridCell.Tab.0.right/0.23.1680.951@0.23.1680.951" timestamp="1582221626835" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1580498998995">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -181,10 +207,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="576" y="215" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580499014550" />
-    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1582744859927">
+    <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1584817484822">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582744859927" />
+    <state x="498" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584817484822" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1581629136085">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

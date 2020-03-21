@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
+{% load static_bundle %}
 
 {% block content %}
-<div id="app"></div>
+<div id="app">Test</div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{% bundle 'app.bundle.js' %}"></script>
+{#    <script>#}
+{#        let home = new window.HomePage({#}
+{#            rootUrl: "/app"#}
+{#        });#}
+{#        home.render();#}
+{#    </script>#}
 {% endblock %}
