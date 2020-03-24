@@ -1,0 +1,30 @@
+.navigation {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+     overflow: scroll;
+
+    nav {
+        padding: 1em 2em;
+
+        ul {
+            height: 100%;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            grid-template-columns: 30% 30% 30%;
+            grid-column-gap: 5%;
+            grid-row-gap: 5%;
+
+            li {
+                list-style: none;
+            }
+
+
+        }
+
+        a:link {
+            padding: 5px;
+            font-size: 1.1em;
+        }
+    }
+}

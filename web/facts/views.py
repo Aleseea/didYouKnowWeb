@@ -9,9 +9,11 @@ from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.parsers import JSONParser
-from web.facts import serializers as app_serializer
+from web.facts import models as app_models
+from web.facts import serializers as app_serializers
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from django.template import loader
+from django.shortcuts import get_object_or_404
 
 
 class UserViewSet(ModelViewSet):
@@ -19,7 +21,7 @@ class UserViewSet(ModelViewSet):
     API endpoint that allows users to be viewed or edited.
     """
     queryset = User.objects.all().order_by('-date_joined')
-    serializer_class = app_serializer.UserSerializer
+    serializer_class = app_serializers.UserSerializer
 
 
 class GroupViewSet(ModelViewSet):
@@ -27,7 +29,7 @@ class GroupViewSet(ModelViewSet):
     API endpoint that allows groups to be viewed or edited.
     """
     queryset = Group.objects.all()
-    serializer_class = app_serializer.GroupSerializer
+    serializer_class = app_serializers.GroupSerializer
 
 
 class FactViewSet(ModelViewSet):
@@ -35,7 +37,7 @@ class FactViewSet(ModelViewSet):
     API endpoint that allows categories to be viewed or edited.
     """
     queryset = app_model.Fact.objects.all().order_by('created')
-    serializer_class = app_serializer.FactSerializer
+    serializer_class = app_serializers.FactSerializer
     permission_classes = [IsAdminUser]
 
 
@@ -44,8 +46,16 @@ class CategoryViewSet(ModelViewSet):
     API endpoint that allows categories to be viewed or edited.
     """
     queryset = app_model.Category.objects.all()
-    serializer_class = app_serializer.CategorySerializer
+    serializer_class = app_serializers.CategorySerializer
     permission_classes = [IsAdminUser]
+
+    # /api/v1/missions/<mission_id>/glossary/
+    @action(detail=True, methods=["get"], url_path="glossary")
+    def glossary(self, request, pk):
+        self.check_permissions(request)
+        category = get_object_or_404(app_models.Category)
+        data = app_serializers.CategorySerializer(category).data
+        return Response(data)
 
     @action(detail=True, methods=["post", "delete"], url_path="categories")
     def handle_fact(self, request, pk):

@@ -1,0 +1,21 @@
+@import "_vars.scss";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap');
+
+.siteName {
+  font-size: 2.5em;
+  font-family: 'Indie Flower', cursive;
+  -webkit-text-stroke: .75px $black;
+  color: rgba(0,0,0,0);
+}
+
+@media screen and (min-width:600px) {
+  .siteName {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .siteName {
+    font-size: 6em;
+  }
+}

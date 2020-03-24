@@ -1,7 +1,8 @@
 var path = require("path");
 
 const basePath = path.resolve(__dirname, "ui");
-const sourcePath = basePath;
+const
+    sourcePath = basePath;
 const outputPath = path.resolve(__dirname, "dist");
 const webpack = require("webpack");
 
