@@ -34,7 +34,7 @@ class GroupViewSet(ModelViewSet):
 
 class FactViewSet(ModelViewSet):
     """
-    API endpoint that allows categories to be viewed or edited.
+    API endpoint that allows facts to be viewed or edited.
     """
     queryset = app_model.Fact.objects.all().order_by('created')
     serializer_class = app_serializers.FactSerializer
@@ -49,9 +49,8 @@ class CategoryViewSet(ModelViewSet):
     serializer_class = app_serializers.CategorySerializer
     permission_classes = [IsAdminUser]
 
-    # /api/v1/missions/<mission_id>/glossary/
-    @action(detail=True, methods=["get"], url_path="glossary")
-    def glossary(self, request, pk):
+    @action(detail=True, methods=["get"], url_path="categories")
+    def category(self, request, pk):
         self.check_permissions(request)
         category = get_object_or_404(app_models.Category)
         data = app_serializers.CategorySerializer(category).data

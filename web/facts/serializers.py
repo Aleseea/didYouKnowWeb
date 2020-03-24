@@ -23,7 +23,7 @@ class FactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Fact
         exclude = []
-        # fields = ['id', 'fact_text', 'true_fact']
+        fields = ['id', 'fact_text', 'true_fact']
 
 
 class CategorySerializer(serializers.ModelSerializer):

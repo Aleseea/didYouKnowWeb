@@ -38,13 +38,13 @@
 @media screen and (min-width: 600px) {
   .navigation {
     grid-column: 1 / span 5;
-    grid-row: 3;
+    grid-row: 4;
   }
 }
 
 @media screen and (max-width: 600px) {
   .navigation {
     grid-column: 1 / span 10;
-    grid-row: 3;
+    grid-row: 4;
   }
 }

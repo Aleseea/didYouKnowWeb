@@ -1,0 +1,10 @@
+@import "_vars.scss";
+
+.slideShow {
+  grid-column: 1 / span 10;
+  grid-row: 2;
+  height: 100%;
+  background-color: red;
+  border-top: $slideshow-border solid $black;
+  border-bottom: $slideshow-border solid $black;
+}
