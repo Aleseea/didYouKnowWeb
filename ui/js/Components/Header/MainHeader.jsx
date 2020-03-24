@@ -4,9 +4,9 @@ import Logo from "Components/Header/Logo";
 
 export default function MainHeader() {
     return (
-        <div>
+        <div className={styles.header}>
             <Logo/>
-            <h1 className={styles.siteName}>DidYouKnow.com</h1>
+            <h1>DidYouKnow.com</h1>
         </div>
     )
 }

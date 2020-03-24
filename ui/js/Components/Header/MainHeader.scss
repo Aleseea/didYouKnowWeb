@@ -1,10 +1,30 @@
 @import "_vars.scss";
 
-.siteName {
+.header {
+  grid-column: 1 / span 10;
   font-size: 2.5em;
-  font-family: 'Indie Flower', cursive;
-  -webkit-text-stroke: .75px $black;
-  color: rgba(0,0,0,0);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 35% auto;
+  align-content: center;
+
+
+  h1 {
+    grid-column: 2;
+    font-family: 'Indie Flower', cursive;
+    -webkit-text-stroke: .01em $black;
+    color: rgba(0, 0, 0, 0);
+  }
+
+  img {
+    //        margin-top: ($slideshow-border * 3);
+    grid-column: 1;
+    width: 100%;
+    max-width: 120px;
+    display: inline-block;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width:600px) {

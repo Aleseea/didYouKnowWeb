@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/js/api/FactApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/app_entry_point.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/app_entry_point.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/js/Components/Navigation/Nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Navigation/Nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +136,7 @@
       <workItem from="1584998954964" duration="1741000" />
       <workItem from="1585000952900" duration="1659000" />
       <workItem from="1585003845531" duration="7483000" />
-      <workItem from="1585078603055" duration="7408000" />
+      <workItem from="1585078603055" duration="9071000" />
     </task>
     <servers />
   </component>
@@ -162,6 +156,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581631321187" />
+    <state x="423" y="127" key="CommitChangelistDialog2" timestamp="1585088597084">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="423" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585088597084" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1580498901919">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
