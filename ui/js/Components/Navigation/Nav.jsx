@@ -49,10 +49,12 @@ export default class Nav extends React.Component {
         if(this.state.allCategories) {
             return(
                 <div className={styles.navigation}>
-                    <h2>Categories</h2>
-                    <ul>
-                        {this.renderCategoryList()}
-                    </ul>
+                    <nav>
+                        <h2>Categories</h2>
+                        <ul>
+                            {this.renderCategoryList()}
+                        </ul>
+                    </nav>
                 </div>
             )
         } else {
