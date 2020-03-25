@@ -2,6 +2,9 @@
 @import "vars";
 @import "carousel";
 
+html {
+  background-color: $white;
+}
 body {
   height: 100vh;
   overflow: scroll;
