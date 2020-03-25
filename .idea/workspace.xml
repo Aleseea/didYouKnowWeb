@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ui/js/Components/Common/Input/TextInput.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/js/Components/Common/Input/TextInput.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/js/api/EmailApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +128,7 @@
       <workItem from="1584998954964" duration="1741000" />
       <workItem from="1585000952900" duration="1659000" />
       <workItem from="1585003845531" duration="7483000" />
-      <workItem from="1585078603055" duration="21110000" />
+      <workItem from="1585078603055" duration="21678000" />
     </task>
     <servers />
   </component>

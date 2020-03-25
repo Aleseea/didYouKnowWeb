@@ -97,7 +97,7 @@ export default class RequestForm extends React.Component {
                     <TextInput
                         value={this.state.emailForm.firstName}
                         name="firstName"
-                        label="First Name"
+                        label="First Name:"
                         placeholder={"Enter your first name"}
                         onChange={this.handleChange}
                         invalid={this.state.errors.includes("firstName")}
@@ -105,7 +105,7 @@ export default class RequestForm extends React.Component {
                     <TextInput
                         value={this.state.emailForm.lastName}
                         name="lastName"
-                        label="Last Name"
+                        label="Last Name:"
                         placeholder={"Enter your last name"}
                         onChange={this.handleChange}
                         invalid={this.state.errors.includes("lastName")}
@@ -113,7 +113,7 @@ export default class RequestForm extends React.Component {
                     <TextInput
                         value={this.state.emailForm.email}
                         name="email"
-                        label="Email"
+                        label="Email:"
                         placeholder={"Enter your email address"}
                         onChange={this.handleChange}
                         invalid={this.state.errors.includes("email")}
@@ -121,7 +121,7 @@ export default class RequestForm extends React.Component {
                     <TextInput
                         value={this.state.emailForm.confirmEmail}
                         name="confirmEmail"
-                        label="Confirm Email"
+                        label="Confirm Email:"
                         placeholder={"Enter your email address again"}
                         onChange={this.handleChange}
                         invalid={this.state.errors.includes("confirmEmail")}
