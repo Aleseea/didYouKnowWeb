@@ -2,6 +2,7 @@ from django.contrib import admin
 from web.facts.models import (
     Fact,
     Category,
+    EmailList,
 )
 
 
@@ -22,3 +23,11 @@ class FactToolAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Fact, FactToolAdmin)
+
+
+class EmailListToolAdmin(admin.ModelAdmin):
+    fields = ("first_name", "last_name", "email")
+    list_display = ("first_name", "last_name", "email")
+
+
+admin.site.register(EmailList, EmailListToolAdmin)

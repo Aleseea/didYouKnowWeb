@@ -3,6 +3,7 @@ from rest_framework import serializers
 from web.facts.models import (
     Fact,
     Category,
+    EmailList,
 )
 
 
@@ -33,3 +34,11 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         exclude = []
         # fields = ['id', 'category_name', 'facts']
+
+
+class EmailListSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = EmailList
+        excluded = []
+        fields = ['first_name', 'last_name', 'email']

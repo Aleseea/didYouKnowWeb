@@ -71,6 +71,15 @@ class CategoryViewSet(ModelViewSet):
         return Response()
 
 
+class EmailListViewSet(ModelViewSet):
+    """
+    API endpoint that allows facts to be viewed or edited.
+    """
+    queryset = app_model.EmailList.objects.all()
+    serializer_class = app_serializers.EmailListSerializer
+    permission_classes = [IsAdminUser]
+
+
 def home(request):
     template = loader.get_template("home.html")
     return HttpResponse(template.render())

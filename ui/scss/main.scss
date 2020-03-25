@@ -9,6 +9,10 @@ body {
   font-size: 12px;
   min-width: 380px;
 
+  img {
+    font-size: 12px;
+  }
+
 
   *, &::before, &::after {
     box-sizing: border-box;

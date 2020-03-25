@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            # TODO: Figure out why this must be commented out to makemigrations/migrate and not commented out to npm run dev:webpack
             "libraries": {
                 "static_bundle": "server.templatetags.static_bundle",
             }
