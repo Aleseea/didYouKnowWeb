@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ui/js/Components/Main/MainContent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/js/Components/Main/MainContent.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/scss/_link.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/scss/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/app_entry_point.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/app_entry_point.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/EmailRequestForm/RequestForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/EmailRequestForm/RequestForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Navigation/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/Navigation/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Navigation/Nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/Navigation/Nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/facts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/facts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ui/js/Components/MainContent" />
       <recent name="$PROJECT_DIR$/ui/js/Components/Header" />
       <recent name="$PROJECT_DIR$/ui/js/Components" />
       <recent name="$PROJECT_DIR$/ui/scss" />
       <recent name="$PROJECT_DIR$/ui/js" />
-      <recent name="$PROJECT_DIR$/server/server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ui/js/Components/SlideShow" />
@@ -167,28 +167,28 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="685" y="425" key="Github.ShareDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581629144189" />
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1585166720890">
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1585177636136">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585166720890" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585177636136" />
     <state width="1680" height="301" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1584753239614" />
     <state width="1680" height="302" key="GridCell.Tab.0.bottom/0.23.1680.951@0.23.1680.951" timestamp="1582221626836" />
-    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1585166720888">
+    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1585177636134">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585166720888" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585177636134" />
     <state width="1680" height="301" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1584753239613" />
     <state width="1680" height="302" key="GridCell.Tab.0.center/0.23.1680.951@0.23.1680.951" timestamp="1582221626834" />
-    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1585166720887">
+    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1585177636133">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585166720887" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585177636133" />
     <state width="1680" height="301" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1584753239613" />
     <state width="1680" height="302" key="GridCell.Tab.0.left/0.23.1680.951@0.23.1680.951" timestamp="1582221626832" />
-    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1585166720889">
+    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1585177636135">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585166720889" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585177636135" />
     <state width="1680" height="301" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1584753239614" />
     <state width="1680" height="302" key="GridCell.Tab.0.right/0.23.1680.951@0.23.1680.951" timestamp="1582221626835" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1580498998995">
@@ -203,10 +203,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="576" y="215" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580499014550" />
-    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585086045583">
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585179870695">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585086045583" />
+    <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585179870695" />
     <state x="498" y="282" width="683" height="486" key="find.popup" timestamp="1585163239340">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

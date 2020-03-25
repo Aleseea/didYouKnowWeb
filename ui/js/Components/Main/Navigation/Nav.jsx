@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Nav.scss";
-import {map} from "lodash";
+import {map, set, cloneDeep} from "lodash";
+import {autobind} from "core-decorators";
 import * as CategoryApi from "api/CategoryApi";
 
 export default class Nav extends React.Component {
@@ -29,12 +30,21 @@ export default class Nav extends React.Component {
         });
     }
 
+    @autobind
+    onSelectCategory(id) {
+        console.log(id, "id");
+    }
+
 
     renderCategoryList() {
         console.log(this.state.allCategories, "state");
         if (this.state.allCategories != null) {
             return map(this.state.allCategories, (category, index) => (
-                    <li key={index}>
+                    <li
+                        className="link"
+                        key={category.id}
+                        onClick={() => this.onSelectCategory(category.id)}
+                    >
                         {category.category_name}
                     </li>
             ));

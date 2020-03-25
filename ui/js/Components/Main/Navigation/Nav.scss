@@ -2,6 +2,7 @@
 
 .navigation {
     overflow: scroll;
+    grid-row: 1;
 
     nav {
         padding: 1em 2em;
@@ -38,14 +39,13 @@
 
 @media screen and (min-width: 600px) {
   .navigation {
-    grid-column: 1 / span 5;
-    grid-row: 4;
+    grid-column: 1;
   }
 }
 
 @media screen and (max-width: 600px) {
   .navigation {
-    grid-column: 1 / span 10;
-    grid-row: 4;
+    grid-column: 1 / span 2;
+    grid-row-gap: $slideshow-border/2;
   }
 }
