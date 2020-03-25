@@ -4,7 +4,6 @@
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/EmailRequestForm/RequestForm.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

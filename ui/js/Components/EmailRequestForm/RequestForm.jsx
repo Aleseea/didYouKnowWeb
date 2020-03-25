@@ -52,21 +52,18 @@ export default class RequestForm extends React.Component {
 
     @autobind
     handleAddEmailToEmailList(contact) {
-        console.log("HandleAddEmailToEmailList")
+        console.log("HandleAddEmailToEmailList");
         EmailApi.addEmail(contact)
             .then((res) => {
-                contact({
-                    // type: ActionTypes.BUG_REPORT_SENT,
-                    bugReports: res.body,
-                });
+               console.log(res.body, "res.body");
             })
             .catch((err) => {
-                contact({
-                    // type: ActionTypes.ERRORED,
-                    message: err.message,
-                })
-            })
+                this.setState({
+                    errorMessage: err.message,
+                });
+            });
     }
+
 
     @autobind
     handleChange(formData) {
