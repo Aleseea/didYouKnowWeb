@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ui/scss/_carousel.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/SlideShow/SlideShow.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/scss/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/_vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/main.scss" afterDir="false" />
     </list>
@@ -134,7 +136,7 @@
       <workItem from="1584998954964" duration="1741000" />
       <workItem from="1585000952900" duration="1659000" />
       <workItem from="1585003845531" duration="7483000" />
-      <workItem from="1585078603055" duration="10285000" />
+      <workItem from="1585078603055" duration="12763000" />
     </task>
     <servers />
   </component>

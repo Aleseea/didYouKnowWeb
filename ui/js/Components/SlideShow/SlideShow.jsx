@@ -54,6 +54,10 @@ export default class SlideShow extends React.Component {
                 <div className={styles.slideShow}>
                     <Carousel
                         indicators={false}
+                        nextLabel={false}
+                        prevLabel={false}
+                        nextIcon={">"}
+                        prevIcon={"<"}
                     >
                         {this.renderFactSlides()}
                     </Carousel>
