@@ -26,13 +26,10 @@
             grid-row-gap: 5%;
 
             li {
-                list-style: none;
+              list-style: none;
+              font-size: 1.1em;
+              cursor: pointer;
             }
-        }
-
-        a:link {
-            padding: 5px;
-            font-size: 1.1em;
         }
     }
 }
