@@ -20,22 +20,6 @@ export default class DisplayFacts extends React.Component {
         }
     }
 
-    // componentDidMount() {
-    //     console.log("Component Did Update");
-    //     CategoryApi.getCategory(this.props.selectedCategory).end((err, res) => {
-    //         if (err) {
-    //             this.setState({
-    //                 error: err.message,
-    //             });
-    //             return;
-    //         }
-    //         console.log(res.body, "res.body");
-    //         this.setState({
-    //             Category: res.body,
-    //         });
-    //     });
-    // }
-
     componentDidMount() {
         console.log("Component Did Mount");
         CategoryApi.getCategories().end((err, res) => {

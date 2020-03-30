@@ -16,27 +16,6 @@ export default class MainContent extends React.Component {
         }
     }
 
-    // componentDidMount() {
-    //     console.log("Component Did Mount");
-    //     CategoryApi.getCategories().end((err, res) => {
-    //         if (err) {
-    //             this.setState({
-    //                 error: err.message,
-    //             });
-    //             return;
-    //         }
-    //         console.log(res.body.results, "res.body");
-    //         this.setState({
-    //             allCategories: res.body.results,
-    //         });
-    //     });
-    // }
-
-    // @autobind
-    // onSelectCategory(id) {
-    //     console.log(id, "id");
-    // }
-
     @autobind
     handleSelectCategory(categoryId) {
         console.log(categoryId, "CategoryId");
@@ -47,7 +26,6 @@ export default class MainContent extends React.Component {
 
 
     renderContent() {
-        //TODO: Change the IF statement so I actually works
         if (this.state.selectedCategory) {
             return (
                 <DisplayFacts
