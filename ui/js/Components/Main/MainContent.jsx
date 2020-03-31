@@ -4,6 +4,7 @@ import {map, set, cloneDeep} from "lodash";
 import {autobind} from "core-decorators";
 import Nav from "Components/Main/Navigation/Nav";
 import RequestForm from "Components/Main/EmailRequestForm/RequestForm";
+import DisplayFacts from "Components/Category/DisplayFacts";
 
 export default class MainContent extends React.Component {
 
@@ -11,40 +12,29 @@ export default class MainContent extends React.Component {
         super();
         this.state = {
             errors: [],
+            selectedCategory: "",
         }
     }
 
-    // componentDidMount() {
-    //     console.log("Component Did Mount");
-    //     CategoryApi.getCategories().end((err, res) => {
-    //         if (err) {
-    //             this.setState({
-    //                 error: err.message,
-    //             });
-    //             return;
-    //         }
-    //         console.log(res.body.results, "res.body");
-    //         this.setState({
-    //             allCategories: res.body.results,
-    //         });
-    //     });
-    // }
-
-    // @autobind
-    // onSelectCategory(id) {
-    //     console.log(id, "id");
-    // }
+    @autobind
+    handleSelectCategory(categoryId) {
+        console.log(categoryId, "CategoryId");
+        this.setState({
+            selectedCategory: categoryId,
+        });
+    }
 
 
     renderContent() {
-        console.log(this.state.allCategories, "state");
-        if (1 === 1) {
+        if (this.state.selectedCategory) {
             return (
-                <RequestForm/>
+                <DisplayFacts
+                    selectedCategory={this.state.selectedCategory}
+                />
             );
         } else {
             return (
-                <li>You have an empty Category list. Please add some definitions first.</li>
+                <RequestForm/>
             );
         }
     }
@@ -52,7 +42,9 @@ export default class MainContent extends React.Component {
     render() {
         return(
             <div className={styles.main}>
-                <Nav/>
+                <Nav
+                    onSelectCategory={this.handleSelectCategory}
+                />
                 {this.renderContent()}
             </div>
         )

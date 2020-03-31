@@ -2,20 +2,24 @@ import React from "react";
 import styles from "./Nav.scss";
 import {map, set, cloneDeep} from "lodash";
 import {autobind} from "core-decorators";
+import PropTypes from "prop-types";
 import * as CategoryApi from "api/CategoryApi";
 
 export default class Nav extends React.Component {
+    static propTypes = {
+        onSelectCategory: PropTypes.func.isRequired,
+    };
 
-    constructor() {
-        super();
-        this.state = {
+    // constructor() {
+    //     super();
+        state = {
             errors: [],
             allCategories: [],
-        }
-    }
+        };
+    // }
 
     componentDidMount() {
-        console.log("Component Did Mount");
+        // console.log("Component Did Mount");
         CategoryApi.getCategories().end((err, res) => {
             if (err) {
                 this.setState({
@@ -23,7 +27,7 @@ export default class Nav extends React.Component {
                 });
                 return;
             }
-            console.log(res.body.results, "res.body");
+            // console.log(res.body.results, "res.body");
             this.setState({
                 allCategories: res.body.results,
             });
@@ -32,18 +36,19 @@ export default class Nav extends React.Component {
 
     @autobind
     onSelectCategory(id) {
-        console.log(id, "id");
+        // console.log(id, "id");
     }
 
 
     renderCategoryList() {
-        console.log(this.state.allCategories, "state");
+        // console.log(this.state.allCategories, "state");
         if (this.state.allCategories != null) {
             return map(this.state.allCategories, (category, index) => (
                     <li
                         className="link"
                         key={category.id}
-                        onClick={() => this.onSelectCategory(category.id)}
+                        // onClick={() => this.onSelectCategory(category.id)}
+                        onClick={() => this.props.onSelectCategory(category.id)}
                     >
                         {category.category_name}
                     </li>
