@@ -1,79 +1,149 @@
 import React from "react";
 import styles from "./RequestForm.scss";
-import {map} from "lodash";
-// import * as EmailApi from "api/EmailApi";
+import TextInput from "Components/Common/Input/TextInput";
+import {cloneDeep, set} from "lodash";
+import {autobind} from "core-decorators";
+import * as EmailApi from "api/EmailApi";
 
 export default class RequestForm extends React.Component {
-//
-//     constructor() {
-//         super();
-//         this.state = {
-//             errors: [],
-//             allCategories: [],
-//         }
-//     }
-//
-//     componentDidMount() {
-//         console.log("Component Did Mount");
-//         CategoryApi.getCategories().end((err, res) => {
-//             if (err) {
-//                 this.setState({
-//                     error: err.message,
-//                 });
-//                 return;
-//             }
-//             console.log(res.body.results, "res.body");
-//             this.setState({
-//                 allCategories: res.body.results,
-//             });
-//         });
-//     }
-//
-//
-//     renderCategoryList() {
-//         console.log(this.state.allCategories, "state");
-//         if (this.state.allCategories != null) {
-//             return map(this.state.allCategories, (category, index) => (
-//                     <li key={index}>
-//                         {category.category_name}
-//                     </li>
-//             ));
-//         } else {
-//             return (
-//                 <ul>
-//                     <a>
-//                         <li>You have an empty Category list. Please add some definitions first.</li>
-//                     </a>
-//                 </ul>
-//             );
-//         }
-//     }
+
+    state = {
+        errors: [],
+        emailForm: {
+            firstName: "",
+            lastName: "",
+            email: "",
+            confirmEmail: "",
+        },
+    };
+
+    componentDidUpdate(oldProps) {
+        // if (this.state.emailForm !== oldProps.emailForm && this.state.emailForm) {
+        //     this.setState({
+        //         emailForm: this.state.emailForm,
+        //     });
+        // }
+    }
+
+    checkValidity() {
+        const errors = [];
+        if (!this.state.emailForm.firstName) {
+            errors.push("firstName");
+            console.log("No First Name was entered");
+        }
+        if (!this.state.emailForm.lastName) {
+            errors.push("lastName");
+            console.log("No First Name was entered");
+        }
+        if (!this.state.emailForm.email || this.state.emailForm.email !== this.state.emailForm.confirmEmail) {
+            errors.push("email");
+            console.log("No First Name was entered");
+        }
+        if (!this.state.emailForm.confirmEmail || this.state.emailForm.email !== this.state.emailForm.confirmEmail) {
+            errors.push("confirmEmail");
+            console.log("No First Name was entered");
+        }
+        this.setState({
+            errors,
+        });
+        console.log(errors, "Error List");
+        return !errors.length;
+    }
+
+    @autobind
+    handleChangeFormat() {
+        let newContact = {
+            first_name: this.state.emailForm.firstName,
+            last_name: this.state.emailForm.lastName,
+            email: this.state.emailForm.email
+        };
+
+        this.handleAddEmailToEmailList(newContact);
+    }
+
+    @autobind
+    handleAddEmailToEmailList(contact) {
+        console.log("HandleAddEmailToEmailList");
+
+        EmailApi.addEmail(contact)
+            .then((res) => {
+               console.log(res.body, "res.body");
+            })
+            .catch((err) => {
+                this.setState({
+                    errorMessage: err.message,
+                });
+            });
+        this.setState({
+            emailForm: {
+                firstName: "",
+                lastName: "",
+                email: "",
+                confirmEmail: "",
+
+            }
+        })
+    }
+
+
+    @autobind
+    handleChange(formData) {
+        const emailForm = cloneDeep(this.state.emailForm);
+        set(emailForm, formData.name, formData.value);
+        this.setState({
+            emailForm,
+        });
+        console.log(emailForm);
+    }
+
+
+    @autobind
+    handleSubmit(e) {
+        e.preventDefault();
+        console.log("HandleSubmit() Is running");
+        if (this.checkValidity()) {
+            console.log("Data is valid");
+            this.handleChangeFormat();
+        }
+    }
 
     render() {
         return(
             <div className={styles.requestForm}>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <h2>Receive Weekly Emails</h2>
-
-                    <label htmlFor="first-name">
-                        First Name:
-                    </label>
-                    <input id="first-name" name="first-name" type="text"/>
-
-                    <label htmlFor="last-name">
-                        Last Name:
-                    </label>
-                    <input id="last-name" name="last-name" type="text"/>
-
-                    <label htmlFor="email">
-                        Email Address:
-                    </label>
-                    <input id="email" name="email" type="email"/>
-
-                    <label htmlFor="reenter-email">
-                        Confirm Email:
-                    </label>
-                    <input id="reenter-email" name="reenter-email" type="email"/>
+                    <TextInput
+                        value={this.state.emailForm.firstName}
+                        name="firstName"
+                        label="First Name:"
+                        placeholder={"Enter your first name"}
+                        onChange={this.handleChange}
+                        invalid={this.state.errors.includes("firstName")}
+                    />
+                    <TextInput
+                        value={this.state.emailForm.lastName}
+                        name="lastName"
+                        label="Last Name:"
+                        placeholder={"Enter your last name"}
+                        onChange={this.handleChange}
+                        invalid={this.state.errors.includes("lastName")}
+                    />
+                    <TextInput
+                        value={this.state.emailForm.email}
+                        name="email"
+                        label="Email:"
+                        placeholder={"Enter your email address"}
+                        onChange={this.handleChange}
+                        invalid={this.state.errors.includes("email")}
+                    />
+                    <TextInput
+                        value={this.state.emailForm.confirmEmail}
+                        name="confirmEmail"
+                        label="Confirm Email:"
+                        placeholder={"Enter your email address again"}
+                        onChange={this.handleChange}
+                        invalid={this.state.errors.includes("confirmEmail")}
+                    />
 
                     <button>Submit</button>
                 </form>
