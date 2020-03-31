@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RequestForm.scss";
 import TextInput from "Components/Common/Input/TextInput";
-import {map, set, cloneDeep} from "lodash";
+import {cloneDeep, set} from "lodash";
 import {autobind} from "core-decorators";
 import * as EmailApi from "api/EmailApi";
 
@@ -51,8 +51,20 @@ export default class RequestForm extends React.Component {
     }
 
     @autobind
+    handleChangeFormat() {
+        let newContact = {
+            first_name: this.state.emailForm.firstName,
+            last_name: this.state.emailForm.lastName,
+            email: this.state.emailForm.email
+        };
+
+        this.handleAddEmailToEmailList(newContact);
+    }
+
+    @autobind
     handleAddEmailToEmailList(contact) {
         console.log("HandleAddEmailToEmailList");
+
         EmailApi.addEmail(contact)
             .then((res) => {
                console.log(res.body, "res.body");
@@ -62,6 +74,15 @@ export default class RequestForm extends React.Component {
                     errorMessage: err.message,
                 });
             });
+        this.setState({
+            emailForm: {
+                firstName: "",
+                lastName: "",
+                email: "",
+                confirmEmail: "",
+
+            }
+        })
     }
 
 
@@ -79,10 +100,10 @@ export default class RequestForm extends React.Component {
     @autobind
     handleSubmit(e) {
         e.preventDefault();
-        console.log("HandleSubmit() Is running")
+        console.log("HandleSubmit() Is running");
         if (this.checkValidity()) {
-            console.log("Data is valid")
-            this.handleAddEmailToEmailList(this.state.emailForm);
+            console.log("Data is valid");
+            this.handleChangeFormat();
         }
     }
 
