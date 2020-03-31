@@ -18,8 +18,8 @@ admin.site.register(Category, CategoryAdmin)
 
 
 class FactToolAdmin(admin.ModelAdmin):
-    fields = ("fact_text", "true_fact", "created")
-    list_display = ("fact_text", "true_fact", "created")
+    fields = ("fact_text", "true_fact")
+    list_display = ("fact_text", "true_fact")
 
 
 admin.site.register(Fact, FactToolAdmin)
