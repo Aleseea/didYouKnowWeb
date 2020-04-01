@@ -61,7 +61,6 @@ export default class DisplayFacts extends React.Component {
             if (category && category.facts) {
                 return map(category.facts, (fact, index) => (
                     <li
-                        className="link"
                         key={fact.id}
                     >
                         {fact.fact_text}

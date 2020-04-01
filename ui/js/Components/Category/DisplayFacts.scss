@@ -6,16 +6,6 @@
   background-color: $main-color;
   box-shadow: .5px .5px 7px 2px $blackShadow;
   padding: 1em 2em;
-  //display: grid;
-  //grid-template-rows: auto;
-
-  //form {
-  //  display: grid;
-  //  grid-template-columns: 30% 30% 30%;
-  //  grid-column-gap: 5%;
-  //  grid-row-gap: 10%;
-  //  padding: 1em 2.5em;
-  //  height: 100%;
 
     h2 {
       color: $headingColor;
@@ -26,17 +16,20 @@
     }
 
     ul {
-      height: 90%;
+      height: 80%;
+      margin-top: 5%;
       display: grid;
       align-items: start;
       text-align: center;
-      //grid-template-columns: 30% 30% 30%;
-      grid-column-gap: 5%;
-      grid-row-gap: 5%;
+      overflow: scroll;
+      grid-auto-rows: max-content;
+      grid-row-gap: 30px;
 
       li {
+        grid-column: 1;
         list-style: none;
-        font-size: 1.1em;
+        font-size: 1.2em;
+        text-align: left;
       }
     }
   //}
