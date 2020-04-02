@@ -38,7 +38,8 @@ class FactViewSet(ModelViewSet):
     """
     queryset = app_model.Fact.objects.all().order_by('created')
     serializer_class = app_serializers.FactSerializer
-    permission_classes = [IsAdminUser]
+    pagination_class = None
+    # permission_classes = [IsAdminUser]
 
 
 class CategoryViewSet(ModelViewSet):
@@ -47,7 +48,7 @@ class CategoryViewSet(ModelViewSet):
     """
     queryset = app_model.Category.objects.all()
     serializer_class = app_serializers.CategorySerializer
-    permission_classes = [IsAdminUser]
+    # permission_classes = [IsAdminUser]
 
     @action(detail=True, methods=["get"], url_path="categories")
     def category(self, request, pk):
@@ -77,7 +78,7 @@ class EmailListViewSet(ModelViewSet):
     """
     queryset = app_model.EmailList.objects.all()
     serializer_class = app_serializers.EmailListSerializer
-    permission_classes = [IsAdminUser]
+    # permission_classes = [IsAdminUser]
 
 
 def home(request):

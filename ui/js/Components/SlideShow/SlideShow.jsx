@@ -15,7 +15,6 @@ export default class SlideShow extends React.Component {
     }
 
     componentDidMount() {
-        console.log("Component Did Mount");
         FactApi.getFacts().end((err, res) => {
             if (err) {
                 this.setState({
@@ -23,16 +22,14 @@ export default class SlideShow extends React.Component {
                 });
                 return;
             }
-            console.log(res.body.results, "res.body");
             this.setState({
-                allFacts: res.body.results,
+                allFacts: res.body,
             });
         });
     }
 
 
     renderFactSlides() {
-        console.log(this.state.allFacts, "state");
         if (this.state.allFacts != null) {
             return map(this.state.allFacts, (fact, index) => (
                 <Carousel.Item key={index}>
