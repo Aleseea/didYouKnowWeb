@@ -12,23 +12,26 @@ export default class MainContent extends React.Component {
         super();
         this.state = {
             errors: [],
-            selectedCategory: "",
+            selectedCategory: -1,
+            categoryName: "",
         }
     }
 
     @autobind
-    handleSelectCategory(categoryId) {
+    handleSelectCategory(categoryId, categoryName) {
         console.log(categoryId, "CategoryId");
         this.setState({
             selectedCategory: categoryId,
+            selectedCategoryName: categoryName,
         });
     }
 
 
     renderContent() {
-        if (this.state.selectedCategory) {
+        if (this.state.selectedCategory >= 0) {
             return (
                 <DisplayFacts
+                    categoryName={this.state.selectedCategoryName}
                     selectedCategory={this.state.selectedCategory}
                 />
             );

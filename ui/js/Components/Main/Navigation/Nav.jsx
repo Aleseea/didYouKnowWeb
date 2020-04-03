@@ -34,12 +34,6 @@ export default class Nav extends React.Component {
         });
     }
 
-    @autobind
-    onSelectCategory(id) {
-        // console.log(id, "id");
-    }
-
-
     renderCategoryList() {
         // console.log(this.state.allCategories, "state");
         if (this.state.allCategories != null) {
@@ -48,7 +42,7 @@ export default class Nav extends React.Component {
                         className="link"
                         key={category.id}
                         // onClick={() => this.onSelectCategory(category.id)}
-                        onClick={() => this.props.onSelectCategory(category.id)}
+                        onClick={() => this.props.onSelectCategory(category.id, category.category_name)}
                     >
                         {category.category_name}
                     </li>

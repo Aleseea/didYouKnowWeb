@@ -8,6 +8,7 @@ import * as CategoryApi from "api/CategoryApi";
 export default class DisplayFacts extends React.Component {
 
     static propTypes = {
+        categoryName: PropTypes.string,
         selectedCategory: PropTypes.number,
     };
 
@@ -78,7 +79,7 @@ export default class DisplayFacts extends React.Component {
         if(this.props.selectedCategory) {
             return(
                 <div className={styles.facts}>
-                    <h2>Facts</h2>
+                    <h2>{this.props.categoryName} Facts</h2>
                     <ul>
                         {this.renderCategoryList()}
                     </ul>
