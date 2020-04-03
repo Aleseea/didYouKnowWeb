@@ -32,11 +32,12 @@
         display: grid;
         grid-template-columns: 15% auto;
         //text-indent: 2.16em;
+        align-items: center;
 
         p {
           text-align: left;
           display: inline-block;
-          vertical-align: middle;
+
         }
         div {
           display: inline-block;
@@ -49,7 +50,6 @@
           margin-right: .2em;
           color: $black;
           border: 1px solid $black;
-          vertical-align: middle;
 
           &.true {
             padding: 0 0.2em;
