@@ -3,7 +3,7 @@
 .requestForm{
   height: 100%;
   color: $labelColor;
-  background-color: $main-color;
+  background-color: $mainColor;
   box-shadow: .5px .5px 7px 2px $blackShadow;
 
   form {
@@ -13,6 +13,7 @@
     grid-row-gap: 10%;
     padding: 1em 2.5em;
     height: 100%;
+    //background-color: $mainColor;
 
     h2 {
       color: $headingColor;
@@ -56,5 +57,9 @@
   .requestForm {
     grid-column: 1 / span 2;
     grid-row: 2;
+
+    form {
+      grid-auto-rows: max-content;
+    }
   }
 }
