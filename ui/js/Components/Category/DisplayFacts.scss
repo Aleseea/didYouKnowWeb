@@ -27,7 +27,40 @@
         grid-column: 1;
         list-style: none;
         font-size: 1.2em;
-        text-align: left;
+        text-align: right;
+        cursor: pointer;
+        //text-indent: 2.16em;
+
+        p {
+          text-align: left;
+          display: inline-block;
+          vertical-align: middle;
+          width: 90%;
+        }
+
+        span {
+          display: none;
+          background-color: $white;
+          border-radius: 100%;
+          margin-right: 1em;
+
+          &.true {
+            color: $true;
+            padding: 0 0.2em;
+          }
+          &.false {
+              color: $false;
+              padding: 0 0.3em;
+            }
+        }
+
+        &:hover {
+          text-indent: 0;
+          span {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
       }
     }
   //}

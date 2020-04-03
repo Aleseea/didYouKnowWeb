@@ -44,6 +44,22 @@ export default class DisplayFacts extends React.Component {
         return selectedCategory;
     }
 
+    @autobind
+    trueFalse(x){
+        if(x === true) {
+            console.log("true");
+            return(
+                <span className={styles.true}>&#10003;</span>
+            )
+
+        } else {
+            console.log("false");
+            return(
+                <span className={styles.false}>&#10007;</span>
+            );
+        }
+    }
+
 
     renderCategoryList() {
         let category = {id: null};
@@ -57,7 +73,8 @@ export default class DisplayFacts extends React.Component {
                     <li
                         key={fact.id}
                     >
-                        {fact.fact_text}
+                        {this.trueFalse(fact.true_fact)}
+                        <p>{fact.fact_text}</p>
                     </li>
                 ));
             } else {
