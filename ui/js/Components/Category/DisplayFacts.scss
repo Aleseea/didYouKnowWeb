@@ -29,19 +29,22 @@
         font-size: 1.2em;
         text-align: right;
         cursor: pointer;
+        display: grid;
+        grid-template-columns: 15% auto;
         //text-indent: 2.16em;
 
         p {
           text-align: left;
           display: inline-block;
           vertical-align: middle;
-          width: 87%;
         }
         div {
           display: inline-block;
+          margin-right: auto;
         }
         span {
           //display: none;
+          display: inline-block;
           border-radius: 100%;
           margin-right: .2em;
           color: $black;
@@ -59,8 +62,6 @@
         &:hover {
           text-indent: 0;
           span {
-            display: inline-block;
-
             &.true.highlighted {
               background-color: $white;
               color: $true;
