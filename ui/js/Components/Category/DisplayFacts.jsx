@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./DisplayFacts.scss";
-import {map, set, cloneDeep} from "lodash";
+import {map, set, cloneDeep, find} from "lodash";
 import {autobind} from "core-decorators";
 import PropTypes from "prop-types";
 import * as CategoryApi from "api/CategoryApi";
@@ -30,9 +30,9 @@ export default class DisplayFacts extends React.Component {
                 });
                 return;
             }
-            console.log(res.body.results, "res.body");
+            console.log(res.body, "res.body");
             this.setState({
-                allCategories: res.body.results,
+                allCategories: res.body,
             });
         });
     }
@@ -40,14 +40,7 @@ export default class DisplayFacts extends React.Component {
     @autobind
     findCategory(id) {
         let selectedCategory = null;
-        console.log(id, "id");
-        map(this.state.allCategories, (category) => {
-            console.log(category, "category");
-            if (category.id === id){
-                console.log("match found");
-                selectedCategory = category;
-            }
-        });
+        selectedCategory = this.state.allCategories.find(category => category.id === id);
         return selectedCategory;
     }
 

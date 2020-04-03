@@ -29,7 +29,7 @@ export default class Nav extends React.Component {
             }
             // console.log(res.body.results, "res.body");
             this.setState({
-                allCategories: res.body.results,
+                allCategories: res.body,
             });
         });
     }

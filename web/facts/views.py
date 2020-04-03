@@ -48,6 +48,7 @@ class CategoryViewSet(ModelViewSet):
     """
     queryset = app_model.Category.objects.all()
     serializer_class = app_serializers.CategorySerializer
+    pagination_class = None
     # permission_classes = [IsAdminUser]
 
     @action(detail=True, methods=["get"], url_path="categories")
