@@ -61,8 +61,8 @@ export default class SlideShow extends React.Component {
                         indicators={false}
                         nextLabel={false}
                         prevLabel={false}
-                        nextIcon={">"}
-                        prevIcon={"<"}
+                        // nextIcon={">"}
+                        // prevIcon={"<"}
                         activeIndex={this.state.number}
                     >
                         {this.renderFactSlides()}
