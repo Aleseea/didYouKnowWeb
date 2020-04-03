@@ -3,6 +3,7 @@ import styles from "./SlideShow.scss";
 import {map} from "lodash";
 import * as FactApi from "api/FactApi";
 import Carousel from 'react-bootstrap/Carousel';
+import random from "utils/random";
 
 export default class SlideShow extends React.Component {
 
@@ -11,8 +12,10 @@ export default class SlideShow extends React.Component {
         this.state = {
             errors: [],
             allFacts: [],
+            number: 0,
         }
     }
+
 
     componentDidMount() {
         FactApi.getFacts().end((err, res) => {
@@ -24,7 +27,12 @@ export default class SlideShow extends React.Component {
             }
             this.setState({
                 allFacts: res.body,
+                number: random(0, res.body.length - 1),
             });
+
+            console.log(res.body.length);
+
+
         });
     }
 
@@ -55,6 +63,7 @@ export default class SlideShow extends React.Component {
                         prevLabel={false}
                         nextIcon={">"}
                         prevIcon={"<"}
+                        activeIndex={this.state.number}
                     >
                         {this.renderFactSlides()}
                     </Carousel>
