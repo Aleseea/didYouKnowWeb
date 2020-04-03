@@ -4,6 +4,7 @@ import {map, set, cloneDeep, find} from "lodash";
 import {autobind} from "core-decorators";
 import PropTypes from "prop-types";
 import * as CategoryApi from "api/CategoryApi";
+import classnames from "classnames";
 
 export default class DisplayFacts extends React.Component {
 
@@ -49,13 +50,19 @@ export default class DisplayFacts extends React.Component {
         if(x === true) {
             console.log("true");
             return(
-                <span className={styles.true}>&#10003;</span>
+                <div>
+                    <span className={classnames(styles.true, styles.highlighted)}>&#10003;</span>
+                    <span className={styles.false}>&#10007;</span>
+                </div>
             )
 
         } else {
             console.log("false");
             return(
-                <span className={styles.false}>&#10007;</span>
+                <div>
+                    <span className={styles.true}>&#10003;</span>
+                    <span className={classnames(styles.false, styles.highlighted)}>&#10007;</span>
+                </div>
             );
         }
     }

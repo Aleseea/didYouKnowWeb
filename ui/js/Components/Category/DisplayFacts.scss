@@ -35,30 +35,41 @@
           text-align: left;
           display: inline-block;
           vertical-align: middle;
-          width: 90%;
+          width: 87%;
         }
-
+        div {
+          display: inline-block;
+        }
         span {
-          display: none;
-          background-color: $white;
+          //display: none;
           border-radius: 100%;
-          margin-right: 1em;
+          margin-right: .2em;
+          color: $black;
+          border: 1px solid $black;
+          vertical-align: middle;
 
           &.true {
-            color: $true;
             padding: 0 0.2em;
           }
           &.false {
-              color: $false;
-              padding: 0 0.3em;
-            }
+            padding: 0 0.3em;
+          }
         }
 
         &:hover {
           text-indent: 0;
           span {
             display: inline-block;
-            vertical-align: middle;
+
+            &.true.highlighted {
+              background-color: $white;
+              color: $true;
+
+            }
+            &.false.highlighted {
+              color: $false;
+              background-color: $white;
+            }
           }
         }
       }
