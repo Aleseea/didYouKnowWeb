@@ -23,7 +23,6 @@ export default class DisplayFacts extends React.Component {
     }
 
     componentDidMount() {
-        console.log("Component Did Mount");
         CategoryApi.getCategories().end((err, res) => {
             if (err) {
                 this.setState({
@@ -31,7 +30,6 @@ export default class DisplayFacts extends React.Component {
                 });
                 return;
             }
-            console.log(res.body, "res.body");
             this.setState({
                 allCategories: res.body,
             });
@@ -48,7 +46,6 @@ export default class DisplayFacts extends React.Component {
     @autobind
     trueFalse(x){
         if(x === true) {
-            console.log("true");
             return(
                 <div>
                     <span className={classnames(styles.true, styles.highlighted)}>&#10003;</span>
@@ -57,7 +54,6 @@ export default class DisplayFacts extends React.Component {
             )
 
         } else {
-            console.log("false");
             return(
                 <div>
                     <span className={styles.true}>&#10003;</span>
@@ -70,10 +66,8 @@ export default class DisplayFacts extends React.Component {
 
     renderCategoryList() {
         let category = {id: null};
-        console.log(this.props.selectedCategory, "CategoryID");
         if (this.props.selectedCategory !== category.id || !category.id) {
                category = this.findCategory(this.props.selectedCategory);
-               console.log(category, "category");
 
             if (category && category.facts) {
                 return map(category.facts, (fact, index) => (

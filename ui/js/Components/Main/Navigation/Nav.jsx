@@ -19,7 +19,6 @@ export default class Nav extends React.Component {
     // }
 
     componentDidMount() {
-        // console.log("Component Did Mount");
         CategoryApi.getCategories().end((err, res) => {
             if (err) {
                 this.setState({
@@ -27,7 +26,6 @@ export default class Nav extends React.Component {
                 });
                 return;
             }
-            // console.log(res.body.results, "res.body");
             this.setState({
                 allCategories: res.body,
             });
@@ -35,13 +33,11 @@ export default class Nav extends React.Component {
     }
 
     renderCategoryList() {
-        // console.log(this.state.allCategories, "state");
         if (this.state.allCategories != null) {
             return map(this.state.allCategories, (category, index) => (
                     <li
                         className="link"
                         key={category.id}
-                        // onClick={() => this.onSelectCategory(category.id)}
                         onClick={() => this.props.onSelectCategory(category.id, category.category_name)}
                     >
                         {category.category_name}

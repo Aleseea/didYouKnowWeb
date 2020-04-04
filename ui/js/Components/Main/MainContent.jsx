@@ -19,7 +19,6 @@ export default class MainContent extends React.Component {
 
     @autobind
     handleSelectCategory(categoryId, categoryName) {
-        console.log(categoryId, "CategoryId");
         this.setState({
             selectedCategory: categoryId,
             selectedCategoryName: categoryName,

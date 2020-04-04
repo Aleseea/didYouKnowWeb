@@ -29,24 +29,19 @@ export default class RequestForm extends React.Component {
         const errors = [];
         if (!this.state.emailForm.firstName) {
             errors.push("firstName");
-            console.log("No First Name was entered");
         }
         if (!this.state.emailForm.lastName) {
             errors.push("lastName");
-            console.log("No First Name was entered");
         }
         if (!this.state.emailForm.email || this.state.emailForm.email !== this.state.emailForm.confirmEmail) {
             errors.push("email");
-            console.log("No First Name was entered");
         }
         if (!this.state.emailForm.confirmEmail || this.state.emailForm.email !== this.state.emailForm.confirmEmail) {
             errors.push("confirmEmail");
-            console.log("No First Name was entered");
         }
         this.setState({
             errors,
         });
-        console.log(errors, "Error List");
         return !errors.length;
     }
 
@@ -63,11 +58,9 @@ export default class RequestForm extends React.Component {
 
     @autobind
     handleAddEmailToEmailList(contact) {
-        console.log("HandleAddEmailToEmailList");
 
         EmailApi.addEmail(contact)
             .then((res) => {
-               console.log(res.body, "res.body");
             })
             .catch((err) => {
                 this.setState({
@@ -93,16 +86,13 @@ export default class RequestForm extends React.Component {
         this.setState({
             emailForm,
         });
-        console.log(emailForm);
     }
 
 
     @autobind
     handleSubmit(e) {
         e.preventDefault();
-        console.log("HandleSubmit() Is running");
         if (this.checkValidity()) {
-            console.log("Data is valid");
             this.handleChangeFormat();
         }
     }

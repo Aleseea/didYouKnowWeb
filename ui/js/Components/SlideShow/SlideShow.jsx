@@ -29,10 +29,6 @@ export default class SlideShow extends React.Component {
                 allFacts: res.body,
                 number: random(0, res.body.length - 1),
             });
-
-            console.log(res.body.length);
-
-
         });
     }
 
@@ -61,8 +57,6 @@ export default class SlideShow extends React.Component {
                         indicators={false}
                         nextLabel={false}
                         prevLabel={false}
-                        // nextIcon={">"}
-                        // prevIcon={"<"}
                         activeIndex={this.state.number}
                     >
                         {this.renderFactSlides()}
