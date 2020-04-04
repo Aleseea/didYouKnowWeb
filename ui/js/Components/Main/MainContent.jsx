@@ -4,7 +4,7 @@ import {map, set, cloneDeep} from "lodash";
 import {autobind} from "core-decorators";
 import Nav from "Components/Main/Navigation/Nav";
 import RequestForm from "Components/Main/EmailRequestForm/RequestForm";
-import DisplayFacts from "Components/Category/DisplayFacts";
+import DisplayFacts from "Components/Main/Category/DisplayFacts";
 
 export default class MainContent extends React.Component {
 
