@@ -3,8 +3,7 @@ import React from "react";
 export default function Logo() {
     return (
         <img
-            src={window.STATIC_URL + "web/images/logo.png"}
-            alt="DidYouKnow.com Logo"
+            src={window.STATIC_URL + "images/logo.png"} alt={"DidYouKnow.com logo"}
         />
     );
 }

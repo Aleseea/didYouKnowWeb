@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MainHeader.scss";
-import Logo from "Components/Header/Logo";
+import Logo from "Logo";
 
 export default function MainHeader() {
     return (
