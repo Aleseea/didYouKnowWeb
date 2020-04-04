@@ -50,6 +50,7 @@
           color: $black;
           border: 1px solid $black;
           box-shadow: 1px 1px 1px $blackShadow;
+          transition-duration: .3s;
 
           &.true {
             padding: 0 0.2em;
