@@ -33,7 +33,7 @@ body {
   background-color: $background-color;
   width: 75%;
   max-width: 1000px;
-  height: 100%;
+  //height: 100%;
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   //grid-template-rows: auto auto ($slideshow-border/2) 40%;
@@ -44,18 +44,19 @@ body {
 
   #home {
     width: 100%;
-    grid-template-rows: auto auto 0 auto;
+    grid-template-rows: auto auto ($slideshow-border/2) auto;
   }
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   body {
     height: 98vh;
     overflow: scroll;
   }
 
   #home {
+    height: 100%;
     margin: 1vh auto;
     grid-template-rows: auto 37% ($slideshow-border/2) 40%;
   }
