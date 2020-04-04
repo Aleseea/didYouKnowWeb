@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/js/Components/Category/DisplayFacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/Category/DisplayFacts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/js/Components/Category/DisplayFacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/Category/DisplayFacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/js/Components/Main/MainContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/MainContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Common/Input/TextInput.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Common/Input/TextInput.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Main/EmailRequestForm/RequestForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/EmailRequestForm/RequestForm.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,10 +148,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581631321187" />
-    <state x="423" y="127" key="CommitChangelistDialog2" timestamp="1585088597084">
+    <state x="423" y="127" key="CommitChangelistDialog2" timestamp="1586034468386">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="423" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585088597084" />
+    <state x="423" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1586034468386" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1580498901919">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

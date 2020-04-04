@@ -13,7 +13,6 @@
     grid-row-gap: 10%;
     padding: 1em 2.5em;
     height: 100%;
-    //background-color: $mainColor;
 
     h2 {
       color: $headingColor;
@@ -29,6 +28,7 @@
       grid-column-gap: 5%;
       display: grid;
       grid-template-columns: 30% 30% 30%;
+      align-items: center;
 
       label {
         font-size: 1.3em;
@@ -38,13 +38,18 @@
       }
       input {
         grid-column: 2 / span 2;
+        font-size: 1.1em;
+        padding: .5em;
+        border-radius: 0.3em;
       }
     }
 
     button {
       font-size: 1em;
-      padding: 1em;
+      padding: .75em;
       grid-column: 2;
+      border-radius: 0.3em;
+      cursor: pointer;
     }
   }
 }
@@ -52,6 +57,7 @@
   .requestForm {
     grid-column: 2 / span 1;
     grid-row: 1;
+    border-radius: 1em 0 0 0;
   }
 }
 
