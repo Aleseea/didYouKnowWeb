@@ -22,20 +22,32 @@
     //        margin-top: ($slideshow-border * 3);
     grid-column: 1;
     width: 100%;
-    max-width: 120px;
+    max-width: 40px;
     display: inline-block;
     margin-left: auto;
   }
 }
 
 @media screen and (min-width:600px) {
-  .header h1{
-    font-size: 3.7em;
+  .header {
+    h1 {
+      font-size: 3.7em;
+    }
+
+    img {
+      max-width: 70px;
+    }
   }
 }
 
 @media screen and (min-width:1000px) {
-  .header h1 {
-    font-size: 6em;
+  .header {
+    h1 {
+      font-size: 6em;
+    }
+
+    img {
+      max-width: 100px;
+    }
   }
 }
