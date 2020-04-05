@@ -30,44 +30,14 @@ body {
 }
 
 #home {
-  background-color: $background-color;
-  width: 75%;
-  max-width: 1000px;
-  //height: 100%;
-  display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  //grid-template-rows: auto auto ($slideshow-border/2) 40%;
-  box-shadow: 2px 2px 10px 2px $blackShadow;
-}
-
-@media screen and (max-width: 1000px) and (min-width: 600px) {
-
-  #home {
   width: 100%;
-    height: 100%;
-    grid-template-rows: auto 37% ($slideshow-border/2) auto;
-  }
-
+  height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-
-  #home {
-    width: 100%;
-    grid-template-rows: auto auto ($slideshow-border/2) auto;
-  }
-
-}
 
 @media screen and (min-width: 1000px) {
   body {
     height: 98vh;
     overflow: scroll;
-  }
-
-  #home {
-    height: 100%;
-    margin: 1vh auto;
-    grid-template-rows: auto 37% ($slideshow-border/2) 40%;
   }
 }
