@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./DisplayFacts.scss";
-import {map, set, cloneDeep, find} from "lodash";
+import {map, find} from "lodash";
 import {autobind} from "core-decorators";
 import PropTypes from "prop-types";
 import * as CategoryApi from "api/CategoryApi";
@@ -72,7 +72,7 @@ export default class DisplayFacts extends React.Component {
             if (category && category.facts) {
                 return map(category.facts, (fact, index) => (
                     <li
-                        key={fact.id}
+                        key={index}
                     >
                         {this.trueFalse(fact.true_fact)}
                         <p>{fact.fact_text}</p>
