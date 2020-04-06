@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="18ff9dbe-3d25-4bd2-a067-4e97e1175296" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Header/MainHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/Components/Main/Category/DisplayFacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/Components/Main/Category/DisplayFacts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/js/utils/setClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/js/utils/setClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/scss/_colorSchemes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/_colorSchemes.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/scss/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ui/scss/_colors.scss" afterDir="false" />
     </list>

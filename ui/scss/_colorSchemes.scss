@@ -8,12 +8,17 @@
   &.color2 {
     background-color: $white;
   }
+  &.color3 {
+    background-color: $white
+  }
 }
 
 .header {
   background-color: $blueGrey;
   h1{
     color: $blueGrey;
+    text-shadow: 1px 1px 2px $whiteShadow;
+    -webkit-text-stroke: .005em $black;
   }
   &.color1 {
     background-color: $coral;
@@ -27,6 +32,14 @@
       color: $green;
     }
   }
+  &.color3 {
+    background-color: $hotPink;
+    h1{
+      color: $white;
+      -webkit-text-stroke-color: $white;
+      text-shadow: 1px 1px 2px $blackShadow;
+    }
+  }
 }
 
 .facts {
@@ -37,6 +50,9 @@
   &.color2 {
     background-color: $green;
   }
+  &.color3 {
+    background-color: $hotPink;
+  }
 }
 
 .requestForm {
@@ -46,6 +62,9 @@
   }
   &.color2 {
     background-color: $green;
+  }
+  &.color3 {
+    background-color: $hotPink;
   }
 }
 
@@ -63,6 +82,14 @@
     }
   }
   &.color2 {
+    li:hover {
+      color: $white;
+    }
+  }
+  &.color3 {
+    li {
+      color: $hotPink
+    }
     li:hover {
       color: $white;
     }
