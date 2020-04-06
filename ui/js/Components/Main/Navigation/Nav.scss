@@ -34,12 +34,12 @@
         list-style: none;
         font-size: 1.3em;
         cursor: pointer;
-        color: $black;
+        //color: $black;
         text-shadow: 1px 1px 2px $blackShadow;
         transition: color .3s;
 
         &:hover {
-          color: $background-color;
+          //color: $background-color;
         }
       }
     }

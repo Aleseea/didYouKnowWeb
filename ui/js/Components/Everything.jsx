@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./Everything.scss";
 import {map, set, cloneDeep} from "lodash";
 import {autobind} from "core-decorators";
-import Nav from "Components/Main/Navigation/Nav";
-import RequestForm from "Components/Main/EmailRequestForm/RequestForm";
-import DisplayFacts from "Components/Main/Category/DisplayFacts";
-import MainHeader from "./Header/MainHeader";
-import SlideShow from "./SlideShow/SlideShow";
-import MainContent from "./Main/MainContent";
+import MainHeader from "Components/Header/MainHeader";
+import SlideShow from "Components/SlideShow/SlideShow";
+import MainContent from "Components/Main/MainContent";
+import random from "utils/random";
+import setClass from "utils/setClass";
+import classnames from "classnames";
 
 export default class Everything extends React.Component {
 
@@ -16,16 +16,33 @@ export default class Everything extends React.Component {
         this.state = {
             errors: [],
             randomNumber: 0,
+            style: null,
         }
     }
 
+    componentDidMount() {
+        let num = random(1, 5);
+        let styleSet = setClass(num);
+
+        this.setState({
+            number: num,
+            style: styleSet,
+        });
+    }
+
     render() {
-        return(
-            <div class="everything">
-                <MainHeader/>
-                <SlideShow/>
-                <MainContent/>
-            </div>
-        )
+        // if(this.state.style) {
+            return (
+                <div className={classnames("everything", this.state.style)}>
+                    <MainHeader
+                        style={this.state.style}
+                    />
+                    <SlideShow/>
+                    <MainContent
+                        style={this.state.style}
+                    />
+                </div>
+            )
+        // }
     }
 }

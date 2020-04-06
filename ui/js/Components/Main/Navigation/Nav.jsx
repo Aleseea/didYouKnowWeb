@@ -4,10 +4,12 @@ import {map, set, cloneDeep} from "lodash";
 import {autobind} from "core-decorators";
 import PropTypes from "prop-types";
 import * as CategoryApi from "api/CategoryApi";
+import classnames from "classnames";
 
 export default class Nav extends React.Component {
     static propTypes = {
         onSelectCategory: PropTypes.func.isRequired,
+        style: PropTypes.string,
     };
 
     // constructor() {
@@ -53,7 +55,7 @@ export default class Nav extends React.Component {
     render() {
         if(this.state.allCategories) {
             return(
-                <div className={styles.navigation}>
+                <div className={classnames("navigation", this.props.style, styles.navigation)}>
                     <nav>
                         <h2>Categories</h2>
                         <ul>

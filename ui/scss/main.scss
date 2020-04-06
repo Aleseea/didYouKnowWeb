@@ -2,6 +2,7 @@
 @import "vars";
 @import "carousel";
 @import "everything";
+@import "colorSchemes";
 
 html {
   background-color: $white;
@@ -41,8 +42,4 @@ body {
     height: 98vh;
     overflow: scroll;
   }
-}
-
-.everything {
-  $headerColor: blue;
 }

@@ -1,0 +1,67 @@
+@import "colors";
+
+.everything {
+  background-color: $lightYellow;
+  &.color1 {
+    background-color: $blueGrey;
+  }
+  &.color2 {
+    background-color: $white;
+  }
+}
+
+.header {
+  background-color: $blueGrey;
+  h1{
+    color: $blueGrey;
+  }
+  &.color1 {
+    background-color: coral;
+    h1{
+      color: coral;
+    }
+  }
+  &.color2 {
+    background-color: darkgreen;
+    h1{
+      color: darkgreen;
+    }
+  }
+}
+
+.facts {
+  background-color: $blueGrey;
+  &.color1 {
+    background-color: coral;
+  }
+  &.color2 {
+    background-color: darkgreen;
+  }
+}
+
+.requestForm {
+  background-color: $blueGrey;
+  &.color1 {
+    background-color: coral;
+  }
+  &.color2 {
+    background-color: darkgreen;
+  }
+}
+
+.navigation{
+  color: $black;
+  li:hover {
+    color: $lightYellow;
+  }
+  &.color1, &.color2 {
+    li:hover {
+      color: $white;
+    }
+  }
+  //&.color2 {
+  //  li:hover {
+  //    color: $white;
+  //  }
+  //}
+}

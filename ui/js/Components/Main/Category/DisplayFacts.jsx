@@ -11,6 +11,7 @@ export default class DisplayFacts extends React.Component {
     static propTypes = {
         categoryName: PropTypes.string,
         selectedCategory: PropTypes.number,
+        style: PropTypes.string,
     };
 
     constructor() {
@@ -89,7 +90,7 @@ export default class DisplayFacts extends React.Component {
     render() {
         if(this.props.selectedCategory) {
             return(
-                <div className={styles.facts}>
+                <div className={classnames("facts", this.props.style, styles.facts)}>
                     <h2>{this.props.categoryName} Facts</h2>
                     <ul>
                         {this.renderCategoryList()}

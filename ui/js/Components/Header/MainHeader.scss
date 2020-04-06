@@ -7,14 +7,14 @@
   display: grid;
   grid-template-columns: 35% auto;
   align-content: center;
-  background-color: $headerColor;
+  //background-color: $headerColor;
 
 
   h1 {
     grid-column: 2;
     font-family: 'Indie Flower', cursive;
     -webkit-text-stroke: .01em $black;
-    color: $headerColor;
+    //color: $headerColor;
     text-shadow: 1px 1px 2px $whiteShadow;
     cursor: default;
   }

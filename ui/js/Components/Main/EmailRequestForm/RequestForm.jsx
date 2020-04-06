@@ -4,8 +4,14 @@ import TextInput from "Components/Common/Input/TextInput";
 import {cloneDeep, set} from "lodash";
 import {autobind} from "core-decorators";
 import * as EmailApi from "api/EmailApi";
+import PropTypes from "prop-types";
+import classnames from "classnames";
 
 export default class RequestForm extends React.Component {
+
+    static propTypes = {
+        style: PropTypes.string,
+    };
 
     state = {
         errors: [],
@@ -16,14 +22,6 @@ export default class RequestForm extends React.Component {
             confirmEmail: "",
         },
     };
-
-    componentDidUpdate(oldProps) {
-        // if (this.state.emailForm !== oldProps.emailForm && this.state.emailForm) {
-        //     this.setState({
-        //         emailForm: this.state.emailForm,
-        //     });
-        // }
-    }
 
     checkValidity() {
         const errors = [];
@@ -99,7 +97,7 @@ export default class RequestForm extends React.Component {
 
     render() {
         return(
-            <div className={styles.requestForm}>
+            <div className={classnames("requestForm", this.props.style, styles.requestForm)}>
                 <form onSubmit={this.handleSubmit}>
                     <h2>Receive Weekly Emails</h2>
                     <TextInput

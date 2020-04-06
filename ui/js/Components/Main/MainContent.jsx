@@ -5,8 +5,14 @@ import {autobind} from "core-decorators";
 import Nav from "Components/Main/Navigation/Nav";
 import RequestForm from "Components/Main/EmailRequestForm/RequestForm";
 import DisplayFacts from "Components/Main/Category/DisplayFacts";
+import PropTypes from "prop-types";
+// import classnames from "classnames";
 
 export default class MainContent extends React.Component {
+
+static propTypes = {
+    style: PropTypes.string,
+};
 
     constructor() {
         super();
@@ -32,11 +38,14 @@ export default class MainContent extends React.Component {
                 <DisplayFacts
                     categoryName={this.state.selectedCategoryName}
                     selectedCategory={this.state.selectedCategory}
+                    style={this.props.style}
                 />
             );
         } else {
             return (
-                <RequestForm/>
+                <RequestForm
+                    style={this.props.style}
+                />
             );
         }
     }
@@ -45,6 +54,7 @@ export default class MainContent extends React.Component {
         return(
             <div className={styles.main}>
                 <Nav
+                    style={this.props.style}
                     onSelectCategory={this.handleSelectCategory}
                 />
                 {this.renderContent()}
