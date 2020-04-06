@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap');
 @import "vars";
 @import "carousel";
+@import "everything";
 
 html {
   background-color: $white;
@@ -40,4 +41,8 @@ body {
     height: 98vh;
     overflow: scroll;
   }
+}
+
+.everything {
+  $headerColor: blue;
 }

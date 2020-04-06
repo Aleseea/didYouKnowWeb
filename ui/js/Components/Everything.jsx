@@ -21,7 +21,7 @@ export default class Everything extends React.Component {
 
     render() {
         return(
-            <div className={styles.everything}>
+            <div class="everything">
                 <MainHeader/>
                 <SlideShow/>
                 <MainContent/>
