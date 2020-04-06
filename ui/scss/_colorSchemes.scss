@@ -16,15 +16,15 @@
     color: $blueGrey;
   }
   &.color1 {
-    background-color: coral;
+    background-color: $coral;
     h1{
-      color: coral;
+      color: $coral;
     }
   }
   &.color2 {
-    background-color: darkgreen;
+    background-color: $green;
     h1{
-      color: darkgreen;
+      color: $green;
     }
   }
 }
@@ -32,20 +32,20 @@
 .facts {
   background-color: $blueGrey;
   &.color1 {
-    background-color: coral;
+    background-color: $coral;
   }
   &.color2 {
-    background-color: darkgreen;
+    background-color: $green;
   }
 }
 
 .requestForm {
   background-color: $blueGrey;
   &.color1 {
-    background-color: coral;
+    background-color: $coral;
   }
   &.color2 {
-    background-color: darkgreen;
+    background-color: $green;
   }
 }
 
@@ -54,14 +54,17 @@
   li:hover {
     color: $lightYellow;
   }
-  &.color1, &.color2 {
+  &.color1 {
+    li {
+      color: $white;
+    }
+    li:hover {
+      color: $darkGrey;
+    }
+  }
+  &.color2 {
     li:hover {
       color: $white;
     }
   }
-  //&.color2 {
-  //  li:hover {
-  //    color: $white;
-  //  }
-  //}
 }
